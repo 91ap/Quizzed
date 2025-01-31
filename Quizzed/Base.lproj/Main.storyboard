@@ -16,62 +16,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="brandi-redd-aJTiW00qqtI-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="UIU-XE-M3b">
-                                <rect key="frame" x="-37" y="-10" width="467" height="872"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brandi-redd-aJTiW00qqtI-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="UIU-XE-M3b">
+                                <rect key="frame" x="0.0" y="0.0" width="409" height="852"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" axis="vertical" distribution="fillProportionally" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="WwG-Go-Qs0">
-                                <rect key="frame" x="16" y="49.666666666666686" width="361" height="753"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fK7-JQ-Ean">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="571"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="571" id="371-wB-9yZ"/>
-                                            <constraint firstAttribute="width" constant="361" id="neQ-9k-l4l"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5i-46-80P">
-                                        <rect key="frame" x="0.0" y="601" width="361" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="361" id="XFQ-HH-jXu"/>
-                                            <constraint firstAttribute="height" constant="44" id="eea-n9-sOs"/>
-                                        </constraints>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="True">
-                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="25"/>
-                                            <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URI-BQ-1GF">
-                                        <rect key="frame" x="0.0" y="675" width="361" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="361" id="4tr-XC-rCP"/>
-                                            <constraint firstAttribute="height" constant="44" id="eA7-gX-lUm"/>
-                                        </constraints>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="False">
-                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="25"/>
-                                            <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eBn-jB-jhl">
-                                        <rect key="frame" x="0.0" y="749" width="361" height="4"/>
-                                        <color key="tintColor" red="0.35294118520000001" green="0.76862752440000004" blue="0.74117648599999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="4" id="AzZ-kY-nJD"/>
-                                            <constraint firstAttribute="width" constant="361" id="YX5-Sw-CFH"/>
-                                        </constraints>
-                                    </progressView>
-                                </subviews>
-                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fK7-JQ-Ean">
+                                <rect key="frame" x="16" y="59" width="377" height="599"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="599" id="wVV-fS-kqS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5i-46-80P">
+                                <rect key="frame" x="16" y="666" width="361" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="361" id="GZc-50-orf"/>
+                                    <constraint firstAttribute="height" constant="44" id="wBT-NV-ZMx"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="True">
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="25"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URI-BQ-1GF">
+                                <rect key="frame" x="16" y="718" width="361" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Pum-Xa-pil"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="361" id="mzL-gN-EUt"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="False">
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="25"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="teH-j8-2KT">
+                                <rect key="frame" x="16" y="790" width="361" height="4"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="361" id="91j-eb-nGG"/>
+                                    <constraint firstAttribute="height" constant="4" id="hAA-7B-6kc"/>
+                                </constraints>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UIU-XE-M3b" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="048-Nd-fyn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="teH-j8-2KT" secondAttribute="bottom" constant="24" id="A32-7h-rWA"/>
+                            <constraint firstAttribute="bottom" secondItem="UIU-XE-M3b" secondAttribute="bottom" id="Gas-TF-MMs"/>
+                            <constraint firstItem="fK7-JQ-Ean" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ils-b7-W0E"/>
+                            <constraint firstItem="URI-BQ-1GF" firstAttribute="top" secondItem="I5i-46-80P" secondAttribute="bottom" constant="8" symbolic="YES" id="Q43-os-nMU"/>
+                            <constraint firstItem="teH-j8-2KT" firstAttribute="top" secondItem="URI-BQ-1GF" secondAttribute="bottom" constant="28" id="RFv-Rl-seO"/>
+                            <constraint firstItem="URI-BQ-1GF" firstAttribute="top" secondItem="I5i-46-80P" secondAttribute="bottom" constant="8" id="RmS-db-qg3"/>
+                            <constraint firstItem="teH-j8-2KT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SnB-00-QaC"/>
+                            <constraint firstItem="I5i-46-80P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="VZw-Dc-0Ug"/>
+                            <constraint firstItem="URI-BQ-1GF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="WWN-I7-DSg"/>
+                            <constraint firstItem="teH-j8-2KT" firstAttribute="top" secondItem="URI-BQ-1GF" secondAttribute="bottom" constant="28" id="X9Z-kn-s1G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="teH-j8-2KT" secondAttribute="trailing" constant="16" id="dv7-5j-f80"/>
+                            <constraint firstItem="fK7-JQ-Ean" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gkB-fp-yG7"/>
+                            <constraint firstItem="I5i-46-80P" firstAttribute="top" secondItem="fK7-JQ-Ean" secondAttribute="bottom" constant="8" id="lem-kH-t8a"/>
+                            <constraint firstItem="fK7-JQ-Ean" firstAttribute="centerX" secondItem="UIU-XE-M3b" secondAttribute="centerX" id="n7w-MO-Wab"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I5i-46-80P" secondAttribute="trailing" constant="16" id="tbN-AT-Df0"/>
+                            <constraint firstItem="UIU-XE-M3b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uyA-LV-aZu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="URI-BQ-1GF" secondAttribute="trailing" symbolic="YES" id="x9I-SW-W9P"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
