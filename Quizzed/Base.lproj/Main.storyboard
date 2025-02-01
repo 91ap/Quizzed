@@ -40,6 +40,9 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="25"/>
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zUd-Ws-Lmz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URI-BQ-1GF">
                                 <rect key="frame" x="16" y="718" width="361" height="44"/>
@@ -53,6 +56,9 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="25"/>
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N2i-tD-r2E"/>
+                                </connections>
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="teH-j8-2KT">
                                 <rect key="frame" x="16" y="790" width="361" height="4"/>
@@ -85,6 +91,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="URI-BQ-1GF" secondAttribute="trailing" symbolic="YES" id="x9I-SW-W9P"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="falseButton" destination="URI-BQ-1GF" id="8Mr-SQ-No2"/>
+                        <outlet property="progressBar" destination="teH-j8-2KT" id="qIi-4i-e6f"/>
+                        <outlet property="questionLabel" destination="fK7-JQ-Ean" id="mL6-do-W6c"/>
+                        <outlet property="trueButton" destination="I5i-46-80P" id="lNJ-dB-BCD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

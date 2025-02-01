@@ -9,11 +9,34 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var progressBar: UIProgressView!
+    
+    @IBOutlet weak var trueButton: UIButton!
+    @IBOutlet weak var falseButton: UIButton!
+    
+    let quiz = ["Four plus Four equals 8?", "Is Swift a programming language?", "What is the capital of France?", "What is the largest ocean?", "What year was Swift released?"]
+    
+    var questionNumber = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        updateUI()
+
     }
 
+    @IBAction func answerButtonPressed(_ sender: UIButton) {
+        questionNumber += 1
+        updateUI()
+         
+        
+    }
+    
+    func updateUI(){
+        questionLabel.text = quiz[questionNumber]
 
+        
+    }
 }
 
