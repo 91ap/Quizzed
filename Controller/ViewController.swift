@@ -44,10 +44,10 @@ class ViewController: UIViewController {
 
         if userAnswer == actualAnswer {
             sender.backgroundColor = UIColor.green
-            print("green")
+            print("Correct!")
         } else {
             sender.backgroundColor = UIColor.red
-            print("red")
+            print("Incorrect......o_O")
         }
 
         
