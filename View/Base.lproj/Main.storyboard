@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quizzed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brandi-redd-aJTiW00qqtI-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="UIU-XE-M3b">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="393" id="XZR-Zy-RIo"/>
+                                    <constraint firstAttribute="width" secondItem="UIU-XE-M3b" secondAttribute="height" multiplier="131:284" id="qcg-iB-Fhl"/>
+                                    <constraint firstAttribute="height" constant="852" id="uiZ-po-HOB"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="XcX-0Y-Itd">
+                                <rect key="frame" x="16" y="59.666666666666686" width="361" height="733"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fK7-JQ-Ean">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="599"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="361" id="Ow2-dT-9dN"/>
+                                            <constraint firstAttribute="height" constant="599" id="Vfh-Pu-pyr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5i-46-80P">
+                                        <rect key="frame" x="0.0" y="613" width="361" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="361" id="GZc-50-orf"/>
+                                            <constraint firstAttribute="height" constant="44" id="wBT-NV-ZMx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="True"/>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zUd-Ws-Lmz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URI-BQ-1GF">
+                                        <rect key="frame" x="0.0" y="671" width="361" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Pum-Xa-pil"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="361" id="mzL-gN-EUt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="False"/>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N2i-tD-r2E"/>
+                                        </connections>
+                                    </button>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="teH-j8-2KT">
+                                        <rect key="frame" x="0.0" y="729" width="361" height="4"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="361" id="91j-eb-nGG"/>
+                                            <constraint firstAttribute="height" constant="4" id="hAA-7B-6kc"/>
+                                        </constraints>
+                                        <color key="progressTintColor" systemColor="systemPinkColor"/>
+                                    </progressView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UIU-XE-M3b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KhO-eA-pUL"/>
+                            <constraint firstItem="UIU-XE-M3b" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="L21-jc-Tat"/>
+                            <constraint firstItem="UIU-XE-M3b" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="L9x-gr-Pen"/>
+                            <constraint firstItem="XcX-0Y-Itd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="RhI-Uu-CQ8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XcX-0Y-Itd" secondAttribute="trailing" constant="16" id="ZfM-Fj-BFP"/>
+                            <constraint firstItem="XcX-0Y-Itd" firstAttribute="centerY" secondItem="UIU-XE-M3b" secondAttribute="centerY" id="dht-7L-1pH"/>
+                            <constraint firstItem="UIU-XE-M3b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="teI-cn-xc4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="falseButton" destination="URI-BQ-1GF" id="8Mr-SQ-No2"/>
+                        <outlet property="progressBar" destination="teH-j8-2KT" id="qIi-4i-e6f"/>
+                        <outlet property="questionLabel" destination="fK7-JQ-Ean" id="mL6-do-W6c"/>
+                        <outlet property="trueButton" destination="I5i-46-80P" id="lNJ-dB-BCD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14.503816793893129" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="brandi-redd-aJTiW00qqtI-unsplash" width="341.33334350585938" height="341.33334350585938"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
